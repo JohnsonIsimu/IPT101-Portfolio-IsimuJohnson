@@ -37,25 +37,26 @@ console.log(course.subj3 + ": " + score.subj3);
 console.log(course.subj4 + ": " + score.subj4);
 console.log(course.subj5 + ": " + score.subj5);
 
-let gwa = (score.subj1 + score.subj2 + score.subj3 + score.subj4 + score.subj5) / 5;
+let subjlenght = Object.keys(course).length;
+let gwa = (score.subj1 + score.subj2 + score.subj3 + score.subj4 + score.subj5) / subjlenght;
 console.log("\n=== Final Evaluation ===");
 console.log("General Weighted Average: " + gwa);
 
-if (gwa >= 98) {
-    console.log("Grade: A+");
-} else if (gwa >= 94) {
+if (gwa >= 98 && gwa <= 100) {
+    console.log("Grade: A+"); 
+} else if (gwa >= 94 && gwa < 98 ) {
     console.log("Grade: A-");
-} else if (gwa >= 90) {
+} else if (gwa >= 90 && gwa < 94) {
     console.log("Grade: B+");
-} else if (gwa >= 87) {
+} else if (gwa >= 87 && gwa < 90) {
     console.log("Grade: B");
-} else if (gwa >= 83) {
+} else if (gwa >= 83 && gwa < 87) {
     console.log("Grade: B-");
-} else if (gwa >= 80) {
+} else if (gwa >= 80 && gwa < 83) {
     console.log("Grade: C+");
-} else if (gwa >= 77) {
+} else if (gwa >= 77 && gwa < 80) {
     console.log("Grade: C");
-} else if (gwa >= 73) {
+} else if (gwa >= 73 && gwa < 77) {
     console.log("Grade: D");
 } else {
     console.log("Grade: F");
