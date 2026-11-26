@@ -5,7 +5,7 @@ const bsit_student = {
             idNumber: 6582,
             yearLevel: 2,
             program: "Information Technology"
-        },
+        }, 
         course: {
             subj1: "ADET",
             subj2: "Event Driven Programming",
